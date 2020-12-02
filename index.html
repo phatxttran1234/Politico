@@ -1,6 +1,7 @@
 <html>
     <title>phatxttran123.github.io</title>
     <body style="background-color:whitesmoke;">
+      <img src="Politico/1_8fPMdk2Cd5iJQ7dI7jXCbA.jpeg" alt="desktop" width="500" height="333">>
         <head>
             <style>
             h1 {text-align: center;}
@@ -81,7 +82,46 @@
           <img src="Politico/Screenshot (199).png" alt="deskop">
           <p>In this example, email is a child property of the user configuration block. This will return the configured email address, if any, that Git will associate with locally created commits.</p>
           <p style="color: red;">B.Add</p>
-          <p></p>
+          <p> if you git add a deleted file the deletion is staged for commit. The language of "add" when you're actually "deleting" can be confusing. If you think or use git stage in place of git add, the reality of what is happening may be more clear.
 
-    </body>
+            git add and git commit (which we will look for it later) go together hand in hand. They don't work when they aren't used together. And, they both work best when used thinking of their joint functionality.</p>
+            <img src="politico/Screenshot (201).png" alt="desktop">
+            <p style="color: red;">C.Commit</p> 
+            <p>Git commit command takes a snapshot representing the staged changes.</p>
+            <h1 style="color: violet;">git add "a file"</h1>
+            <p>After running the Git commit command, you need to type in the description of the commit in the text editor.
+
+              This Git commit example shows how you set the description with the commit function:</p>
+            <h1 style="color: violet;">git commit -m "message"</h1>
+
+            <p>The following example shows how to save a snapshot of changes done in the whole working directory. This code only works for tracked files.</p>
+            <img src="politico/Screenshot (203).png" alt="">
+            <p style="color: red;">D.Push</p> 
+            <p>After you make and commit changes locally, you can share them with the remote repository using: "git push". Pushing changes to the remote makes your commits accessible to others who you may be collaborating with. This will also update any open pull requests with the branch that you're working on.</p>
+             <img src="politico/Screenshot (206).png" alt="">
+             <div class="a">4.How to resolve conflicts?</div>
+             <p>1.Open Git Bash.</p>
+             <p>2.Navigate into the local Git repository that has the merge conflict.</p>
+             <h1 style="color: violet;">cd REPOSITORY-NAME</h1>
+             <p>3.Generate a list of the files affected by the merge conflict. In this example, the file styleguide.md has a merge conflict.</p>
+             <p>4.Open your favorite text editor, such as Atom, and navigate to the file that has merge conflicts.</p>
+             <p>5.To see the beginning of the merge conflict in your file, search the file for the conflict marker <<<<<<<. When you open the file in your text editor, you'll see the changes from the HEAD or base branch after the line <<<<<<< HEAD. Next, you'll see =======, which divides your changes from the changes in the other branch, followed by >>>>>>> BRANCH-NAME. In this example, one person wrote "open an issue" in the base or HEAD branch and another person wrote "ask your question in IRC" in the compare branch or branch-a.</p>
+             <p>6.Decide if you want to keep only your branch's changes, keep only the other branch's changes, or make a brand new change, which may incorporate changes from both branches. Delete the conflict markers <<<<<<<, =======, >>>>>>> and make the changes you want in the final merge. In this example, both changes are incorporated into the final merge:</p>
+             <h1 style="color: violet;">If you have questions, please open an issue or ask in our IRC channel if it's more urgent.</h1>
+             <p>7.Add or stage your changes.</p>
+             <h1 style="color: violet;">$ git add .</h1>
+             <p>8.Commit your changes with a comment.</p>
+             <h1 style="color: violet;">$ git commit -m "Resolved merge conflict by incorporating both suggestions."</h1>
+
+             <div class="a">5.Branch?</div>
+             <p style="color: red;">What is branch?</p>
+             <p>Branching is a feature available in most modern version control systems. Branching in other VCS's can be an expensive operation in both time and disk space. In Git, branches are a part of your everyday development process. Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes. This makes it harder for unstable code to get merged into the main code base, and it gives you the chance to clean up your future's history before merging it into the main branch.</p>
+              <img src="Politico/Screenshot (210).png" alt="">
+              <p>The diagram above visualizes a repository with two isolated lines of development, one for a little feature, and one for a longer-running feature. By developing them in branches, it’s not only possible to work on both of them in parallel, but it also keeps the main master branch free from questionable code.</p>
+              <p style="color: red;">How Branch work?</p>
+              <p>A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.</p>
+
+              <p>The git branch command lets you create, list, rename, and delete branches. It doesn’t let you switch between branches or put a forked history back together again. For this reason, git branch is tightly integrated with the git checkout and git merge commands.</p>
+               <p style="color: whitesmoke;">
+               </body>
 </html>
